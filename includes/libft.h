@@ -6,7 +6,7 @@
 /*   By: mikim <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/02 17:25:21 by mikim             #+#    #+#             */
-/*   Updated: 2017/10/15 02:09:56 by mikim            ###   ########.fr       */
+/*   Updated: 2017/10/15 20:56:17 by mikim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,10 +63,12 @@ int					ft_strncmp(const char *s1, const char *s2, size_t n);
 void				ft_strupper(char *s);
 void				ft_strlower(char *s);
 char				*ft_strsub(char const *s, unsigned int start, size_t len);
+char				*ft_strextract(char const *s, int c);
 char				*ft_strjoin(char const *s1, char const *s2);
 char				*ft_strcjoin(char const *s1, char c, char const *s2);
 char				*ft_strtrim(char const *s);
 char				**ft_strsplit(char const *s, char c);
+void				ft_splitdel(char **split);
 int					ft_intlen(long n);
 int					ft_atoi(const char *s);
 int					ft_atoi_base(const char *s, int base);

@@ -6,7 +6,7 @@
 #    By: mikim <mikim@student.42.us.org>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/10/15 01:56:50 by mikim             #+#    #+#              #
-#    Updated: 2017/10/15 20:35:20 by mikim            ###   ########.fr        #
+#    Updated: 2017/10/15 20:55:22 by mikim            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,6 +35,7 @@ SRC = ft_atoi.c\
 	  ft_strcpy.c\
 	  ft_strdel.c\
 	  ft_strdup.c\
+	  ft_strextract.c\
 	  ft_strjoin.c\
 	  ft_strlen.c\
 	  ft_strlower.c\
