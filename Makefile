@@ -6,7 +6,7 @@
 #    By: mikim <mikim@student.42.us.org>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/10/15 01:56:50 by mikim             #+#    #+#              #
-#    Updated: 2017/10/15 01:58:57 by mikim            ###   ########.fr        #
+#    Updated: 2017/10/15 20:35:20 by mikim            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,6 +27,7 @@ SRC = ft_atoi.c\
 	  ft_memmove.c\
 	  ft_memset.c\
 	  ft_printf.c\
+	  ft_splitdel.c\
 	  ft_strchr.c\
 	  ft_strcjoin.c\
 	  ft_strclr.c\
