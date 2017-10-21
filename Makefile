@@ -6,7 +6,7 @@
 #    By: mikim <mikim@student.42.us.org>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/10/15 01:56:50 by mikim             #+#    #+#              #
-#    Updated: 2017/10/15 20:55:22 by mikim            ###   ########.fr        #
+#    Updated: 2017/10/21 12:30:10 by mikim            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -53,6 +53,7 @@ SRC = ft_atoi.c\
 	  ft_uitoa_base.c\
 	  ft_ultoa.c\
 	  ft_ultoa_base.c\
+	  get_next_line.c\
 	  init_args.c\
 	  init_args_etc.c\
 	  parse_args.c\
