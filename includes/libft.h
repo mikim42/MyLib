@@ -6,7 +6,7 @@
 /*   By: mikim <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/02 17:25:21 by mikim             #+#    #+#             */
-/*   Updated: 2017/12/30 21:39:32 by mikim            ###   ########.fr       */
+/*   Updated: 2017/12/30 21:52:36 by mikim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@
 # include <limits.h>
 # include <stdint.h>
 
-# define FT_SQR(x) (x * x)
+# define FT_SQR(x) ((x) * (x))
 # define FT_MIN(a, b) (a < b ? a : b)
 # define FT_MAX(a, b) (a > b ? a : b)
 # define FT_ABS(x) (x < 0 ? -x : x)
