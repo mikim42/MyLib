@@ -6,7 +6,11 @@
 /*   By: mikim <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/02 17:25:21 by mikim             #+#    #+#             */
+<<<<<<< HEAD
 /*   Updated: 2018/01/05 15:40:43 by mikim            ###   ########.fr       */
+=======
+/*   Updated: 2017/12/30 21:52:36 by mikim            ###   ########.fr       */
+>>>>>>> b509944bbf546cd56c1414285953eee4113536ae
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +30,10 @@
 # include <limits.h>
 # include <stdint.h>
 
-# define FT_MIN(a, b) return (a < b ? a : b)
-# define FT_MAX(a, b) return (a > b ? a : b)
-# define FT_ABS(x) return (x < 0 ? -x : x)
+# define FT_SQR(x) ((x) * (x))
+# define FT_MIN(a, b) (a < b ? a : b)
+# define FT_MAX(a, b) (a > b ? a : b)
+# define FT_ABS(x) (x < 0 ? -x : x)
 # define FT_ISNUM(x) (x >= '0' && x <= '9')
 # define FT_ISABC(x) ((x >= 'a' && x <= 'z') || (x >= 'A' && x <= 'Z'))
 # define FT_UPPER(x) if (x >= 'a' && x <= 'z') x -= 32

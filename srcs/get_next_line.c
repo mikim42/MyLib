@@ -6,7 +6,11 @@
 /*   By: mikim <mikim@student.42.us.org>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/20 18:53:48 by mikim             #+#    #+#             */
+<<<<<<< HEAD
 /*   Updated: 2018/01/05 15:39:52 by mikim            ###   ########.fr       */
+=======
+/*   Updated: 2017/11/17 20:55:47 by mikim            ###   ########.fr       */
+>>>>>>> b509944bbf546cd56c1414285953eee4113536ae
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +30,8 @@ static int	ft_new_line(char **s, char **line, int fd, int ret)
 		tmp = ft_strdup(s[fd] + len + 1);
 		free(s[fd]);
 		s[fd] = tmp;
+		if (s[fd][0] == '\0')
+			free(s[fd]);
 	}
 	else if (s[fd][len] == '\0')
 	{
