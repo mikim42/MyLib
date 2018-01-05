@@ -6,7 +6,7 @@
 /*   By: mikim <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/02 17:25:21 by mikim             #+#    #+#             */
-/*   Updated: 2017/10/15 20:56:17 by mikim            ###   ########.fr       */
+/*   Updated: 2018/01/05 15:40:43 by mikim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,6 +72,7 @@ void				ft_splitdel(char **split);
 int					ft_intlen(long n);
 int					ft_atoi(const char *s);
 int					ft_atoi_base(const char *s, int base);
+double				ft_atof(const char *s);
 long				ft_atol(const char *s);
 int					ft_atol_base(const char *s, int base);
 char				*ft_itoa(int n);
@@ -89,7 +90,6 @@ char				*ft_ultoa_base(unsigned long n, int base);
 
 # define BUFF_SIZE 32
 
-int					ft_new_line(char **s, char **line, int fd, int ret);
 int					get_next_line(const int fd, char **line);
 
 /*

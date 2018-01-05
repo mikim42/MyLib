@@ -6,13 +6,13 @@
 /*   By: mikim <mikim@student.42.us.org>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/20 18:53:48 by mikim             #+#    #+#             */
-/*   Updated: 2017/10/21 12:29:36 by mikim            ###   ########.fr       */
+/*   Updated: 2018/01/05 15:39:52 by mikim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-int		ft_new_line(char **s, char **line, int fd, int ret)
+static int	ft_new_line(char **s, char **line, int fd, int ret)
 {
 	char	*tmp;
 	int		len;
@@ -38,7 +38,7 @@ int		ft_new_line(char **s, char **line, int fd, int ret)
 	return (1);
 }
 
-int		get_next_line(const int fd, char **line)
+int			get_next_line(const int fd, char **line)
 {
 	static char	*s[255];
 	char		buf[BUFF_SIZE + 1];
