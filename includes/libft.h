@@ -3,11 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mikim <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: mikim <mikim@student.42.us.org>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/03/02 17:25:21 by mikim             #+#    #+#             */
-/*   Updated: 2018/01/05 15:46:14 by mikim            ###   ########.fr       */
-/*   Updated: 2017/12/30 21:52:36 by mikim            ###   ########.fr       */
+/*   Created: 2018/01/06 13:25:49 by mikim             #+#    #+#             */
+/*   Updated: 2018/01/06 13:25:50 by mikim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,16 +15,18 @@
 
 # include <unistd.h>
 # include <stdlib.h>
+# include <stdbool.h>
 # include <stdio.h>
+# include <stdint.h>
+# include <stdarg.h>
 # include <string.h>
 # include <strings.h>
 # include <fcntl.h>
 # include <sys/types.h>
 # include <sys/uio.h>
-# include <stdarg.h>
 # include <wchar.h>
 # include <limits.h>
-# include <stdint.h>
+# include <pthread.h>
 
 # define FT_SQR(x) ((x) * (x))
 # define FT_MIN(a, b) (a < b ? a : b)
