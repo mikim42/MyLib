@@ -6,7 +6,7 @@
 /*   By: mikim <mikim@student.42.us.org>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/06 13:25:49 by mikim             #+#    #+#             */
-/*   Updated: 2018/01/06 13:25:50 by mikim            ###   ########.fr       */
+/*   Updated: 2018/01/21 12:55:04 by mikim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@
 # define FT_ABS(x) (x < 0 ? -x : x)
 # define FT_ISNUM(x) (x >= '0' && x <= '9')
 # define FT_ISABC(x) ((x >= 'a' && x <= 'z') || (x >= 'A' && x <= 'Z'))
+# define FT_SPACE(x) ((x >= 9 && s <= 13) || x == 32)
 # define FT_UPPER(x) if (x >= 'a' && x <= 'z') x -= 32
 # define FT_LOWER(x) if (x >= 'A' && x <= 'Z') x += 32
 
