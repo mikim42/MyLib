@@ -6,11 +6,29 @@
 /*   By: Mingyun Kim <mikim@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/01 13:54:43 by Mingyun K         #+#    #+#             */
-/*   Updated: 2018/02/03 14:29:29 by Mingyun K        ###   ########.fr       */
+/*   Updated: 2018/02/03 15:46:11 by Mingyun K        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
+
+bool	ft_vec_del(t_vec *vec, size_t index)
+{
+	bool	res;
+
+	res = false;
+	if (vec && vec->content && index >= vec->size)
+		res = true;
+	if (res)
+	{
+		ft_bzero(&vec->content[vec->content_size * index], vec->content_size);
+		realloc(vec->content, vec->content_size * (vec->size));
+		ft_bzero(&vec->content[vec->content_size * (size - 1)],
+					vec->content_size);
+		vec->size--;
+	}
+	return (res);
+}
 
 void	ft_vec_destroy(t_vec **vec)
 {

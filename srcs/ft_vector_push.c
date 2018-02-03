@@ -6,7 +6,7 @@
 /*   By: Mingyun Kim <mikim@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/02 20:54:14 by Mingyun K         #+#    #+#             */
-/*   Updated: 2018/02/02 21:22:53 by Mingyun K        ###   ########.fr       */
+/*   Updated: 2018/02/03 15:15:14 by Mingyun K        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ bool	ft_vec_push_index(t_vec *vec, void *elem, size_t index)
 		res = realloc(vec->content, vec->content_size * (vec->size + 2));
 	if (res)
 	{
-		ft_bzero(&vec->content[vec->content_size * vec->size],
+		ft_bzero(&vec->content[vec->content_size * (vec->size + 1)],
 					vec->content_size);
 		ft_memmove(&vec->content[vec->content_size * (index + 1)],
 					&vec->content[vec->content_size * index],
