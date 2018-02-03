@@ -6,7 +6,7 @@
 #    By: mikim <mikim@student.42.us.org>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/10/15 01:56:50 by mikim             #+#    #+#              #
-#    Updated: 2018/01/07 12:42:30 by mikim            ###   ########.fr        #
+#    Updated: 2018/02/02 20:58:00 by Mingyun K        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,6 +25,7 @@ SRC = ft_atoi.c\
 	  ft_memcmp.c\
 	  ft_memcpy.c\
 	  ft_memdel.c\
+	  ft_memdup.c\
 	  ft_memmove.c\
 	  ft_memset.c\
 	  ft_printf.c\
@@ -54,6 +55,9 @@ SRC = ft_atoi.c\
 	  ft_uitoa_base.c\
 	  ft_ultoa.c\
 	  ft_ultoa_base.c\
+	  ft_vector.c\
+	  ft_vector_push.c\
+	  ft_vector_pop.c\
 	  get_next_line.c\
 	  init_args.c\
 	  init_args_etc.c\
@@ -107,13 +111,13 @@ $(OBJS): | $(OBJDIR)
 $(NAME): $(OBJS)
 	@ar rcs $@ $^
 	@ranlib $@
-	@echo "\x1B[32;1m[libft - 모래반지 빵야빵야!]\x1B[0m"
+	@echo "\x1B[32;1m[$(NAME) - 모래반지 빵야빵야!]\x1B[0m"
 
 clean:
 	@/bin/rm -rf $(OBJDIR)
 
 fclean: clean
 	@/bin/rm -f $(NAME)
-	@echo "\x1B[31m[libft - fclean]\x1B[0m"
+	@echo "\x1B[31m[$(NAME) - fclean]\x1B[0m"
 
 re: fclean all

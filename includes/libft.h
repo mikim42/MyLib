@@ -6,7 +6,7 @@
 /*   By: mikim <mikim@student.42.us.org>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/06 13:25:49 by mikim             #+#    #+#             */
-/*   Updated: 2018/01/21 12:55:04 by mikim            ###   ########.fr       */
+/*   Updated: 2018/02/02 21:03:08 by Mingyun K        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,10 +39,11 @@
 # define FT_LOWER(x) if (x >= 'A' && x <= 'Z') x += 32
 
 /*
-**					My Libft
+**					LIBFT
 */
 
 void				ft_bzero(void *s, size_t n);
+void				*ft_memdup(const void *src, size_t size);
 void				*ft_memset(void *b, int c, size_t len);
 void				*ft_memcpy(void *dst, const void *src, size_t n);
 void				*ft_memccpy(void *dst, void *src, int c, size_t n);
@@ -89,7 +90,7 @@ char				*ft_uitoa_base(unsigned int n, int base);
 char				*ft_ultoa_base(unsigned long n, int base);
 
 /*
-**					Get Next Line
+**					GET NEXT LINE
 */
 
 # define BUFF_SIZE 32
@@ -97,8 +98,9 @@ char				*ft_ultoa_base(unsigned long n, int base);
 int					get_next_line(const int fd, char **line);
 
 /*
-**					Printf
+**					FT_PRINTF
 **
+
 **					SETTINGS	EFFECT		COLORS
 **					{OFF}		OFF SETTING	BLK		BLACK
 **					{SET:BO}	BOLD		RED		RED
@@ -337,5 +339,38 @@ void				set_colo(const char *restrict fmt, t_pf_env *e);
 void				set_light_colo(const char *restrict fmt, t_pf_env *e);
 void				set_bg_colo(const char *restrict fmt, t_pf_env *e);
 void				set_options(const char *restrict fmt, t_pf_env *e);
+
+/*
+**					VECTOR
+*/
+
+typedef	struct		s_vec
+{
+	void			*content;
+	size_t			content_size;
+	size_t			size;
+}					t_vec;
+
+/*
+**					ft_vecor.c
+*/
+
+t_vec				*ft_vec_create(size_t content_size);
+void				ft_vec_destroy(t_vec **vec);
+
+/*
+**					vector_push.c
+*/
+bool				ft_vec_push_back(t_vec *vec, void *elem);
+bool				ft_vec_push_front(t_vec *vec, void *elem);
+bool				ft_vec_push_index(t_vec *vec, void *elem, size_t index);
+
+/*
+**					vector_pop.c
+*/
+
+void				*ft_vec_pop_front(t_vec *vec);
+void				*ft_vec_pop_back(t_vec *vec);
+void				*ft_vec_pop_index(t_vec *vec, size_t index);
 
 #endif
