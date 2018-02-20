@@ -6,7 +6,7 @@
 /*   By: Mingyun Kim <mikim@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/01 13:54:43 by Mingyun K         #+#    #+#             */
-/*   Updated: 2018/02/03 15:46:11 by Mingyun K        ###   ########.fr       */
+/*   Updated: 2018/02/20 08:58:52 by Mingyun K        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@ bool	ft_vec_del(t_vec *vec, size_t index)
 	if (res)
 	{
 		ft_bzero(&vec->content[vec->content_size * index], vec->content_size);
-		realloc(vec->content, vec->content_size * (vec->size));
-		ft_bzero(&vec->content[vec->content_size * (size - 1)],
+		vec->content = realloc(vec->content, vec->content_size * (vec->size));
+		ft_bzero(&vec->content[vec->content_size * (vec->size - 1)],
 					vec->content_size);
 		vec->size--;
 	}
